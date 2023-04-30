@@ -1,31 +1,37 @@
+# make an invoice
 class Category:
+
+    # initializ the object’s state with __init__
     def __init__(self, name):
         self.name = name
-        self.ledger = []
+        self.invoice = []
 
+    #  return a string representation of the object with __str__
     def __str__(self):
+        # ^ means that the string should be centered
         title = f"{self.name:*^30}\n"
         items = ""
         total = 0
-        for item in self.ledger:
+        for item in self.invoice:
+            # > means that the str should be right-aligned
             items += f"{item['description'][0:23]:23}" + f"{item['amount']:>7.2f}" + "\n"
             total += item['amount']
         output = title + items + "Total: " + str(total)
         return output
 
     def deposit(self, amount, description=""):
-        self.ledger.append({"amount": amount, "description": description})
+        self.invoice.append({"amount": amount, "description": description})
 
     def withdraw(self, amount, description=""):
         if self.check_funds(amount):
-            self.ledger.append({"amount": -amount, "description": description})
+            self.invoice.append({"amount": -amount, "description": description})
             return True
         else:
             return False
 
     def get_balance(self):
         balance = 0
-        for item in self.ledger:
+        for item in self.invoice:
             balance += item['amount']
         return balance
 
@@ -40,13 +46,13 @@ class Category:
     def check_funds(self, amount):
         return amount <= self.get_balance()
 
-
+# make a spend chart
 def create_spend_chart(categories):
     
     withdrawals = []
     names = []
     for category in categories:
-        withdrawals.append(sum(item['amount'] for item in category.ledger if item['amount'] < 0))
+        withdrawals.append(sum(item['amount'] for item in category.invoice if item['amount'] < 0))
         names.append(category.name)
 
     total = sum(withdrawals)
