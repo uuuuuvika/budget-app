@@ -4,18 +4,18 @@ from unittest import main
 
 # category 1
 food = budget.Category("Food")
-food.deposit(1000, "initial deposit")
-food.withdraw(10.15, "groceries")
-food.withdraw(15.89, "restaurant and so on")
+food.deposit(1000, "Initial deposit")
+food.withdraw(10.15, "Groceries")
+food.withdraw(15.89, "Restaurant and so on")
 # category 2
 clothing = budget.Category("Clothing")
 food.transfer(50, clothing)
-clothing.withdraw(25.55)
-clothing.withdraw(100)
+clothing.withdraw(25.55, "Flea market")
+clothing.withdraw(100, "Zalando")
 # category 3
 fun = budget.Category("Fun")
-fun.deposit(1000, "initial deposit")
-fun.withdraw(15)
+fun.deposit(100, "Initial deposit")
+fun.withdraw(35, "Berghain")
 # ...
 
 # print invoices
