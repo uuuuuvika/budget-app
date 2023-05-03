@@ -1,4 +1,4 @@
-# make an invoice
+
 class Category:
     # initializ the object with __init__
     def __init__(self, name):
@@ -44,6 +44,7 @@ class Category:
 
     def check_funds(self, amount):
         return amount <= self.get_balance()
+
 
 # make a spend chart
 def create_spend_chart(categories):

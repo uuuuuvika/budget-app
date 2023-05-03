@@ -5,7 +5,7 @@ def load_csv():
     categories = {}
     with open('transactions.csv', 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # skip header row
+        next(reader)  # to skip header row
         for row in reader:
             category_name, transaction_type, amount, description = row
             if category_name not in categories:
