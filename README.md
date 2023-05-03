@@ -56,14 +56,13 @@ Food,50,TR,Transfer to Clothing
 
 ```
 
-User can create their CSV using google sheets
-
+the user can create their CSV using google sheets
 
 |Category|Type|Amount|Description|
-| --------- |:-------------:| ------------- |:-------------:|
+| --------- |:-------------:| ------------- |-------------|
 Food|DEP|1000|Initial deposit
 Food|WDRW|10.15|Groceries
-Food|WDRW|15.89	Restaurant
+Food|WDRW|15.89|Restaurant
 Food|TR|50|Clothing
 Clothing|DEP|500|Initial deposit
 Clothing|WDRW|25|Shoes
