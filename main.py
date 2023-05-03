@@ -7,11 +7,13 @@ food = budget.Category("Food")
 food.deposit(1000, "Initial deposit")
 food.withdraw(10.15, "Groceries")
 food.withdraw(15.89, "Restaurant and so on")
+
 # category 2
 clothing = budget.Category("Clothing")
 food.transfer(50, clothing)
 clothing.withdraw(25.55, "Flea market")
 clothing.withdraw(100, "Zalando")
+
 # category 3
 fun = budget.Category("Fun")
 fun.deposit(100, "Initial deposit")
