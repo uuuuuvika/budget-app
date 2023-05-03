@@ -1,9 +1,9 @@
-from budget import create_spend_chart
+from budget.create_spend_chart import create_spend_chart
 from unittest import main
-import csv
-from read_csv import load_csv 
+from load_csv import load_csv
+import click
 
-# TO DO
+# TO DO:
 # use comand line to update csv 
 # click; check out others python library for sdding colors  
 

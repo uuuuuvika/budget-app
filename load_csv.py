@@ -1,11 +1,11 @@
 import csv
-from budget import Category
+from budget.create_invoices import Category
 
 def load_csv():
     categories = {}
     with open('transactions.csv', 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # to skip header row
+        next(reader)
         for row in reader:
             category_name, transaction_type, amount, description = row
             if category_name not in categories:
@@ -18,6 +18,5 @@ def load_csv():
                 if description not in categories:
                     categories[description] = Category(description)
                 categories[category_name].transfer(float(amount), categories[description])
+
     return categories
-
-
