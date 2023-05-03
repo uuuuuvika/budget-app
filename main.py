@@ -25,3 +25,7 @@ print(fun, "\n")
 
 # print the chart
 print(create_spend_chart([food, clothing, fun]))
+
+# csv
+# use comand line to update csv 
+# click; check out others python library for sdding colors  

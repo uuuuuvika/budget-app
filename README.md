@@ -42,3 +42,7 @@ Percentage spent by category
         n
         g
 ```
+
+## User input (work in progress)
+
+The idea is that the user can run the budget calculator from the command line by uploading/reading from a command line their CSV file containing the budget data.
