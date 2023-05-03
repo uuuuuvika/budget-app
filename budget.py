@@ -1,7 +1,6 @@
 # make an invoice
 class Category:
-
-    # initializ the object’s state with __init__
+    # initializ the object with __init__
     def __init__(self, name):
         self.name = name
         self.invoice = []
