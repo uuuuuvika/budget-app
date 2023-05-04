@@ -43,9 +43,9 @@ Percentage spent by category
         g
 ```
 
-## User input (work in progress)
+## User input
 
-The idea is that the user can run the budget calculator from the command line by uploading/reading from a command line their CSV file containing the budget data. Here's an example of what the CSV file structure could look like:
+The idea is that the user can run the expense tracker from the command line by reading their CSV file containing the budget data. Here's an example of what the CSV file structure could look like:
 
 ```
 Category,Amount,Type,Description
@@ -56,7 +56,7 @@ Food,50,TR,Transfer to Clothing
 
 ```
 
-the user can create their CSV using google sheets
+## Formatting 
 
 |Category|Type|Amount|Description|
 | --------- |:-------------:| ------------- |-------------|
@@ -70,7 +70,24 @@ Health|DEP|200|Initial deposit
 Fun|DEP|1000|Initial deposit
 Fun|WDRW|50|Berghain
 Fun|WDRW|120|Opera
-Food|WDRW|85|Coffee outside
+Food|WDRW|85|Coffee and cakes 
 Health|WDRW|60|Urban Sport
 Health|WDRW|10|Medicine
 Health|WDRW|40|Supplements
+
+Note:
+ 
+ 1. Your header must look like this:
+
+ |Category|Type|Amount|Description|
+ | --------- |:-------------:| ------------- |-------------|
+
+ 2. You must only use folloving types:
+  - DEP = deposite
+  - WDRW = withdraw
+  - TR = transfer(to other category)
+  
+ 3. If you use TR, the description should be the name of the category to which you transfer the amount:
+ 
+ Food|TR|50|Clothing
+ | --------- |:-------------:| ------------- |-------------|
