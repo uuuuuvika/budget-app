@@ -1,5 +1,4 @@
 # Python Budget Calculator 
-
 ## Example output
 ```
 python3 main.py
@@ -55,7 +54,6 @@ Food,15.89,WDRW,restaurant and more foo
 Food,50,TR,Transfer to Clothing
 
 ```
-
 ## Formatting 
 
 |Category|Type|Amount|Description|
@@ -83,7 +81,7 @@ Note:
  | --------- |:-------------:| ------------- |-------------|
 
  2. You must only use folloving types:
-  - DEP = deposite
+  - DEP = deposit
   - WDRW = withdraw
   - TR = transfer(to other category)
   
