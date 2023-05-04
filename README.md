@@ -1,4 +1,4 @@
-# Python Budget Calculator 
+# Budget Calculator 
 ## Example output
 ```
 *************Food*************
