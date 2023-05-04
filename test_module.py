@@ -1,14 +1,14 @@
 import unittest
-import budget.create_invoices as create_invoices
-from budget.create_invoices import create_spend_chart
+import budget.category as category
+from budget.category import create_spend_chart
 
 
 class UnitTests(unittest.TestCase):
     maxDiff = None
     def setUp(self):
-        self.food = create_invoices.Category("Food")
-        self.entertainment = create_invoices.Category("Entertainment")
-        self.business = create_invoices.Category("Business")
+        self.food = category.Category("Food")
+        self.entertainment = category.Category("Entertainment")
+        self.business = category.Category("Business")
 
     def test_deposit(self):
         self.food.deposit(900, "deposit")
