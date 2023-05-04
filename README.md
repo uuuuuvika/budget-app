@@ -1,4 +1,4 @@
-# Python Budget Calculator 
+# Budget Calculator (a CLI app)
 ## Example output
 ```
 python3 main.py
