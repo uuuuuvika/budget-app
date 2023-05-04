@@ -1,23 +1,32 @@
 # Python Budget Calculator 
 ## Example output
 ```
-python3 main.py
 *************Food*************
 Initial deposit        1000.00
 Groceries               -10.15
-Restaurant and so on    -15.89
+Restaurant              -15.89
 Transfer to Clothing    -50.00
-Total: 923.96
+Coffee outside          -85.00
+Total: 838.96
 
 ***********Clothing***********
 Transfer from Food       50.00
-Flea market             -25.55
-Total: 24.45
+Initial deposit         500.00
+Shoes                   -25.00
+Total: 525.0
+
+************Health************
+Initial deposit         200.00
+Urban Sport             -60.00
+Medicine                -10.00
+Supplements             -40.00
+Total: 90.0
 
 *************Fun**************
-Initial deposit         100.00
-Berghain                -35.00
-Total: 65
+Initial deposit        1000.00
+Berghain                -50.00
+Opera                  -120.00
+Total: 830.0
 
 Percentage spent by category
 100|
@@ -25,19 +34,19 @@ Percentage spent by category
  80|
  70|
  60|
- 50| o
- 40| o
- 30| o
- 20| o     o
- 10| o  o  o
-  0| o  o  o
-    ----------
-     F  C  F
-     o  l  u
-     o  o  n
-     d  t
-        h
-        i
+ 50|
+ 40|
+ 30| o        o
+ 20| o     o  o
+ 10| o     o  o
+  0| o  o  o  o
+    -------------
+     F  C  H  F
+     o  l  e  u
+     o  o  a  n
+     d  t  l
+        h  t
+        i  h
         n
         g
 ```
