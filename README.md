@@ -1,4 +1,4 @@
-# Budget Calculator (a CLI app)
+# Python Budget Calculator 
 ## Example output
 ```
 python3 main.py
@@ -89,3 +89,9 @@ Note:
  
  Food|TR|50|Clothing
  | --------- |:-------------:| ------------- |-------------|
+ 
+ ## To run
+ 
+ ```
+ python3 main.py /path/to/my/csv/file.csv
+ ```
