@@ -3,13 +3,13 @@ from unittest import main
 from load_csv import load_csv
 import click
 
-# TO DO:
-# use comand line to update csv 
-# click; check out others python library for sdding colors  
+@click.command()
+@click.argument('file_path', type=click.Path(exists=True))
+def my_program(file_path):
+    categories = load_csv(file_path)
+    for category in categories.values():
+        print(category,  "\n")
+    print(create_spend_chart(categories.values()))
 
-categories = load_csv()
-
-for category in categories.values():
-    print(category,  "\n")
-
-print(create_spend_chart(categories.values()))
+if __name__ == '__main__':
+    my_program()
