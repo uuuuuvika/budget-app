@@ -1,7 +1,6 @@
 import csv
 from budget.create_invoices import Category
 
-
 def load_csv(file_path):
     categories = {}
     with open(file_path, 'r') as file:

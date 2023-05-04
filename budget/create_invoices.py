@@ -1,19 +1,21 @@
+import click
+
 class Category:
     def __init__(self, name):
         self.name = name
         self.invoice = []
 
-    #  return a string representation of the object with __str__
     def __str__(self):
         # ^ str should be centered
-        title = f"{self.name:*^30}\n"
+        title = click.style(f"{self.name:*^30}\n", fg="cyan")
         items = ""
         total = 0
         for item in self.invoice:
             # > str should be right-aligned
             items += f"{item['description'][0:23]:23}" + f"{item['amount']:>7.2f}" + "\n"
             total += item['amount']
-        output = title + items + "Total: " + str(total)
+        total_str = click.style(f"Total: {total}", fg="bright_cyan")
+        output = title + items + total_str
         return output
 
     def deposit(self, amount, description=""):

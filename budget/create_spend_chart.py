@@ -1,3 +1,5 @@
+import click
+
 def create_spend_chart(categories):
     
     withdrawals = []
@@ -9,16 +11,16 @@ def create_spend_chart(categories):
     total = sum(withdrawals)
     percentages = [(withdrawal / total) * 100 for withdrawal in withdrawals]
 
-    chart = "Percentage spent by category\n"
+    chart = click.style("Percentage spent by category\n\n", fg='cyan')
     for i in range(100, -10, -10):
         line = str(i).rjust(3) + "| "
         for percentage in percentages:
             if percentage >= i:
-                line += "o  "
+                line += click.style("o  ", fg='magenta')
             else:
                 line += "   "
         chart += line + "\n"
-    chart += "    " + "-" * (len(categories) * 3 + 1) + "\n"
+    chart += "    " + click.style("-" * (len(categories) * 3 + 1), fg='green') + "\n"
 
     max_name_length = max(len(name) for name in names)
 
