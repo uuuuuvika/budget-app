@@ -15,4 +15,4 @@ if __name__ == '__main__':
     my_program()
 
 
-# TO DO: update CSV from CL
+# TODO: update CSV from CL
